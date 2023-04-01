@@ -68,4 +68,4 @@
 6. Combine styles (Spread & Object.Assing)
 7. Events & Bind
 8. Get Github Repo
-9. send function with props & paramters
+9. send function with props & parameters
