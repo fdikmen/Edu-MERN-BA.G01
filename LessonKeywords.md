@@ -65,6 +65,7 @@
 3. PropTypes
 4. Constructor
 5. Style
-6. Combine styles
-7. Events
+6. Combine styles (Spread & Object.Assing)
+7. Events & Bind
 8. Get Github Repo
+9. send function with props & paramters

@@ -1,21 +1,30 @@
 // Created by "RCE" snippet
 import React, { Component } from 'react'
+import EventCompSub from './EventCompSub';
 
 export class EventComp extends Component {
-    clickHandler() {
-        console.log('Button Clicked');
-        alert('Button Clicked');
-    }
-    testFromClassFiled = "testFromClassFiled defined in EventComp"
+  
+  setNumber = (num) => {
+    console.log('App Clicked from EventComp. Number is :' + num);
+    alert('App Clicked From EventComp. Number is :' + num);
+  }
+  
+  clickHandler() {
+    console.log('Button Clicked');
+    alert('Button Clicked');
+  }
+  //testFromClassFiled = "testFromClassFiled defined in EventComp"
   render() {
-    const testFromJSXField = "testFromJSXField defined in render function"
+    //const testFromJSXField = "testFromJSXField defined in render function"
     return (
-      <div>EventComp
-        <p>{this.testFromClassFiled}</p>
+      <div style={{ border: '1px solid red', padding: 35 }}>EventComp
+        {/* <p>{this.testFromClassFiled}</p>
         <br/>
-        <p>{testFromJSXField}</p>
-        <br/>
-        <button onClick={this.clickHandler}>Click</button>
+        <p>{testFromJSXField}</p> */}
+        <br />
+        <button onClick={this.clickHandler}>Click(EventComp)</button>
+
+        <EventCompSub age={21} setNumber={this.setNumber}/>
       </div>
     )
   }
