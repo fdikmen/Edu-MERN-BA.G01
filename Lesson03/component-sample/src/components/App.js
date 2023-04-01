@@ -4,6 +4,7 @@ import BlogItem from './BlogItem';
 import BlogTest from './BlogTest';
 
 function App() {
+  const title = "ReactJS From app.js";
   return (
     <div className="App">
       <header className="App-header">
@@ -11,7 +12,10 @@ function App() {
        
         {/* <BlogItem></BlogItem> */}
         <BlogItem/>
-        <BlogTest></BlogTest>
+        <BlogTest blogtitle={title} age={123}
+         name="FirstName LastName"
+         subtitle="Subtitle from App.js"
+         ></BlogTest>
       </header>
     </div>
   );

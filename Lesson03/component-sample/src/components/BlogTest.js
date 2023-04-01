@@ -16,7 +16,12 @@ import React, { Component } from 'react'
 export class BlogTest extends Component {
   render() {
     return (
-      <div>BlogTest</div>
+      <div>BlogTest <br/>
+      {this.props.blogtitle} <br/>
+      {this.props.age}<br/>
+      {this.props.name}<br/>
+      {this.props.subtitle}
+      </div>
     )
   }
 }
