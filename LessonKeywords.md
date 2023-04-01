@@ -66,3 +66,4 @@
 4. Constructor
 5. Style
 6. Combine styles
+7. Events

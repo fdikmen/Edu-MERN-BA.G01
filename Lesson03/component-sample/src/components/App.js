@@ -4,6 +4,7 @@ import BlogMain from './BlogMain';
 import React from 'react';
 import StyleSample from './StyleSample';
 import StyleSample02 from './StyleSample02';
+import EventComp from './EventComp';
 
 /**
  * import => import a module from another file
@@ -23,7 +24,8 @@ class App extends React.Component {
           <img src={logo} className="App-logo" alt="logo" />
           {/* <BlogMain /> */}
           {/* <StyleSample/> */}
-          <StyleSample02/>
+          {/* <StyleSample02/> */}
+          <EventComp/>
         </header>
       </div>
     );
