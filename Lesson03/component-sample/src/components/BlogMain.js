@@ -76,11 +76,3 @@ SampleArray.map(function(item,index,allData)
 });
 */
 
-
-/*class [CLASSNAME] {
-
-  constructor() {}
-  // Constructor is called when the class is initialized
-
-}
-*/
