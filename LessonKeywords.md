@@ -57,3 +57,10 @@
 # 31032023-Keywords
  
 1. props
+---
+# 01042023-Keywords
+ 
+1. props
+2. React Developer Tools
+3. PropTypes
+4. Constructor

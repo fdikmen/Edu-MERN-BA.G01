@@ -24,15 +24,15 @@ import React, { Component } from 'react';
 
 class BlogItem extends Component {
     render() {
-        let blogHeader = <h1 className="blogTitle" >from Blog Item Component</h1>
+        let blogHeader = <h1 className="blogTitle" >{this.props.title}</h1>
 
+        console.log("BlogItem Component All Props:", this.props);
         return (
             <div className='blogItemComp'>
                 {blogHeader}
-                <p>Lorem Ipsum </p>
-                <p>Lorem Ipsum </p>
-                <p>Lorem Ipsum {5 + 5}</p>
-                <p>{5 / 2 === 2.5 ? "YES" : "NO"}</p>
+                <p>{this.props.description} </p>
+                {/* <p>Lorem Ipsum {5 + 5}</p> */}
+                {/* <p>{5 / 2 === 2.5 ? "YES" : "NO"}</p> */}
                 {/* <label htmlFor="test">Blog Item Label</label> */}
             </div>
         );
