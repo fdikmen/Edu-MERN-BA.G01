@@ -64,4 +64,5 @@
 2. React Developer Tools
 3. PropTypes
 4. Constructor
-5. Styles
+5. Style
+6. Combine styles
