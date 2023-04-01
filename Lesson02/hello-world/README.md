@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
-First Command: npm i
+First Command:
+### `npm install`
 
 In the project directory, you can run:
 

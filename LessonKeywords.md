@@ -39,6 +39,3 @@ Module System
 Component (extends)
 
 Kurallar; 1-Live Share de çalışma, 2- Komutları İlgili Klasörde Yazmaya Çalış, 3- Uygulama Oluşturmak İçin npx create-react-app [APP-NAME] komutunu kullan, 4- Eğer eklentilerde sES7+ React/Redux/React-Native snippets harici eklentileri silebilirsiniz.
-
-31032023-Keywords
-props
