@@ -36,3 +36,55 @@
     transform: rotate(360deg);
   }
 }
+
+
+.ListComponent input {
+  margin-bottom: 5px;
+  padding: 10px;
+  width: 90%;
+  color:blueviolet;
+}
+.ListComponent {
+  margin: 0 auto;
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #e6e6e6;
+}
+.ListComponent ul {
+
+  width: 90%;
+  list-style: none;
+  padding: 0;
+}
+.ListComponent li {
+  margin-bottom: 5px;
+  padding: 1px;
+}
+
+.ListComponent span {
+  margin-right: 10px;
+}
+
+.FormComponent {
+  margin: 0 auto;
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #e6e6e6;
+  margin-top: 5px;
+}
+
+.FormComponent input {
+  margin-bottom: 5px;
+  padding: 10px;
+  width: 90%;
+}
+.FormComponent button {
+  padding: 10px;
+  width: 98%;
+  background-color: #282c34;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+}

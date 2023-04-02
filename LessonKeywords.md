@@ -81,3 +81,5 @@
 4. Counter (First App)
 5. Class vs Functional Comp. (Stateful vs Stateless)
 6. PhoneBook (Second app) --> npx create-react-app phonebook
+Component, import-export, classComponent, PropTypes, State, Spread (Array Merge), props (array,function)
+React Developer Tools, Array.Filter & Array.indexOf
