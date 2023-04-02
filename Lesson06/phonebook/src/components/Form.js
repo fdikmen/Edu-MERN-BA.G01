@@ -26,7 +26,7 @@ export class Form extends Component {
     }
 
     render() {
-        console.log("Form Props:",this.props)
+        //console.log("Form Props:",this.props)
         return (
             <div className='FormComponent'>
                 <form onSubmit={this.onSubmit}>
