@@ -10,8 +10,7 @@ class Contact extends Component {
         contacts: [
             { name: "John", phone: "123-456-7890" },
             { name: "Jane", phone: "123-456-7891" },
-            { name: "Joe ", phone: "123-456-7892" }],
-            filteredContacts: this.state.contacts
+            { name: "Joe ", phone: "123-456-7892" }]
     }
     
     addContact = (newContact) => {
@@ -24,25 +23,11 @@ class Contact extends Component {
          */
     }
 
-    addFilter = (newFilter) => {
-         //filter the contacts Array.Filter & Array.indexOf
-         if (newFilter !== '') {
-            const newList = this.state.contacts.filter((contact) => {
-                return contact.name.toLowerCase().indexOf(newFilter.toLowerCase()) !== -1
-                    || contact.phone.toLowerCase().indexOf(newFilter.toLowerCase()) !== -1
-
-            })
-            this.setState({ filteredContacts: newList })
-        }
-        else {
-            this.setState({ filteredContacts: this.state.contacts })
-        }
-    }
     render() {
         return (
             <div  style={{alignContent:'center',alignItems:'center',alignSelf:'center'}}>
                 <h1>Phone Book</h1>
-                <List  contacts={this.state.filteredContacts} addFilter={this.addFilter}/>
+                <List  contacts={this.state.contacts}/>
                 <Form  addContact={this.addContact}/>
             </div>
         )
