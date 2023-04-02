@@ -77,3 +77,7 @@
      b. in Constructor
      c. With Arrow Function
 2. State
+3. re-Render
+4. Counter
+5. Class vs Functional Comp. (Stateful vs Stateless)
+6. PhoneBook
