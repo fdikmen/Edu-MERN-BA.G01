@@ -77,7 +77,7 @@
      b. in Constructor
      c. With Arrow Function
 2. State
-3. re-Render
-4. Counter
+3. re-Render (React Diff - React Virtual DOM)
+4. Counter (First App)
 5. Class vs Functional Comp. (Stateful vs Stateless)
-6. PhoneBook
+6. PhoneBook (Second app) --> npx create-react-app phonebook
