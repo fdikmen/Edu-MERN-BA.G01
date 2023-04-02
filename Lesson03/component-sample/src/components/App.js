@@ -6,6 +6,7 @@ import StyleSample from './StyleSample';
 import StyleSample02 from './StyleSample02';
 import EventComp from './EventComp';
 import StateSample from './StateSample';
+import Counter from './Counter';
 
 /**
  * import => import a module from another file
@@ -27,7 +28,8 @@ class App extends React.Component {
           {/* <StyleSample/> */}
           {/* <StyleSample02/> */}
           {/* <EventComp/> */}
-          <StateSample/>
+          {/* <StateSample/> */}
+          <Counter/>
         </header>
       </div>
     );

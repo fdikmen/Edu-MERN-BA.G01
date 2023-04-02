@@ -20,6 +20,11 @@ export class StateSample extends Component {
        },1000)*/
     }
 
+    changeName = () => {
+        var randomNumber = Math.floor(Math.random()*150);
+        this.setState({name:'Tommy Lee - ' + randomNumber});
+    }
+
   render() {
     return (
       <div>
@@ -31,7 +36,8 @@ export class StateSample extends Component {
         <br/>
         <div>Address: {this.state.address}</div><br/>
 
-        <button onClick={this.changeAge}>Add Age</button>
+        <button onClick={this.changeAge}>Add Age</button><br/>
+        <button onClick={this.changeName}>Change Name</button>
       </div>
     )
   }
