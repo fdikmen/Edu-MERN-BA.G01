@@ -69,3 +69,11 @@
 7. Events & Bind
 8. Get Github Repo
 9. send function with props & parameters
+---
+# 02042023-Keywords
+ 
+1. Data Bind Methods
+     a. With Function
+     b. in Constructor
+     c. With Arrow Function
+2. State

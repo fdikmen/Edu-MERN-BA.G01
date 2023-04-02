@@ -5,6 +5,7 @@ import React from 'react';
 import StyleSample from './StyleSample';
 import StyleSample02 from './StyleSample02';
 import EventComp from './EventComp';
+import StateSample from './StateSample';
 
 /**
  * import => import a module from another file
@@ -25,7 +26,8 @@ class App extends React.Component {
           {/* <BlogMain /> */}
           {/* <StyleSample/> */}
           {/* <StyleSample02/> */}
-          <EventComp/>
+          {/* <EventComp/> */}
+          <StateSample/>
         </header>
       </div>
     );

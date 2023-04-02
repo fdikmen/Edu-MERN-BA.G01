@@ -1,12 +1,13 @@
 // Created by "RCE" snippet
 import React, { Component } from 'react'
+import EvenCompSubSub from './EvenCompSubSub';
 
 export class EventCompSub extends Component {
-    clickHandler = () => {
-        //console.log("EventCompSub clickHandler");
-        //alert("EventCompSub clickHandler");
-       this.props.setNumber("234 (from EventCompSub)");
-    }
+    // clickHandler = () => {
+    //     //console.log("EventCompSub clickHandler");
+    //     //alert("EventCompSub clickHandler");
+    //    this.props.setNumber("234 (from EventCompSub)");
+    // }
   render() {
     console.log("EventCompSub props",this.props);
     return (
@@ -16,7 +17,8 @@ export class EventCompSub extends Component {
         AGE : {this.props.age}
         <br/>
         {/* <button onClick={this.props.setNumber()}>Click(EventCompSub)</button> */}
-        <button onClick={this.clickHandler}>Click(EventCompSub)</button>
+        {/* <button onClick={this.clickHandler}>Click(EventCompSub)</button> */}
+        <EvenCompSubSub setNumber={this.props.setNumber} name="Tommy"/>
         </div>
     )
   }
