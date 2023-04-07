@@ -8,7 +8,7 @@ export class List extends Component {
     /*DefaultProps => is a way to set default values for the props
     static defaultProps = { contact: [] }*/
 
-    state = { filterText: '', filteredContacts: this.props.contacts }
+    state = { filterText: ''}
 
     onChangeFilterText = (event) => {
         //console.log(event.target.value)
