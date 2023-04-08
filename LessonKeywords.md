@@ -83,3 +83,15 @@
 6. PhoneBook (Second app) --> npx create-react-app phonebook
 Component, import-export, classComponent, PropTypes, State, Spread (Array Merge), props (array,function)
 React Developer Tools, Array.Filter & Array.indexOf
+
+---
+# 07042023-Keywords
+ 
+1. Summary for Phone Book App
+
+---
+# 08042023-Keywords
+ 
+1. Life Cycle
+2. React Life Cycle
+3. Constructor (Mounting)
