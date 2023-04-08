@@ -102,3 +102,5 @@ React Developer Tools, Array.Filter & Array.indexOf
 6. IV. ComponentDidUpdate
 7. V. ComponentWillUnmont
 8. VI. getDerivedStateFromProps
+9. VII. shouldComponentUpdate
+10. VIII. getSnapshotBeforeUpdate
