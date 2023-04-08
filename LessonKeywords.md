@@ -92,6 +92,10 @@ React Developer Tools, Array.Filter & Array.indexOf
 ---
 # 08042023-Keywords
  
-1. Life Cycle
-2. React Life Cycle
-3. Constructor (Mounting)
+1. LifeCycle - React LifeCycle
+2. React Component LifeCycle 
+[https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/]
+// Mounting - Updation - Unmounting
+3. I. Constructor (Mounting)
+4. II. Render -> PURE
+5. III. ComponentDidMount
