@@ -92,15 +92,17 @@ React Developer Tools, Array.Filter & Array.indexOf
 ---
 # 08042023-Keywords
  
-1. LifeCycle - React LifeCycle
-2. React Component LifeCycle 
-[https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/]
+01. LifeCycle - React LifeCycle
+02. React Component LifeCycle 
+     [https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/]
 // Mounting - Updation - Unmounting
-3. I. Constructor (Mounting)
-4. II. Render -> PURE
-5. III. ComponentDidMount
-6. IV. ComponentDidUpdate
-7. V. ComponentWillUnmont
-8. VI. getDerivedStateFromProps
-9. VII. shouldComponentUpdate
+03. I. Constructor (Mounting)
+04. II. Render -> PURE
+05. III. ComponentDidMount
+06. IV. ComponentDidUpdate
+07. V. ComponentWillUnmont
+08. VI. getDerivedStateFromProps
+09. VII. shouldComponentUpdate
 10. VIII. getSnapshotBeforeUpdate
+11. FETCHING
+MOCK ==> https://jsonplaceholder.typicode.com/
