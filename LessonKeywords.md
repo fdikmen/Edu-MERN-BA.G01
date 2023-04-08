@@ -99,3 +99,6 @@ React Developer Tools, Array.Filter & Array.indexOf
 3. I. Constructor (Mounting)
 4. II. Render -> PURE
 5. III. ComponentDidMount
+6. IV. ComponentDidUpdate
+7. V. ComponentWillUnmont
+8. VI. getDerivedStateFromProps
