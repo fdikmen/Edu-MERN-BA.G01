@@ -4,17 +4,18 @@ import About from "./components/About";
 
 function App() {
   const lineSpace = <span style={{ padding: '0px 5px' }}>|</span>;
+  const linkStyle = {color:'red',textDecoration:'none'};
   return (
     <div>
       <h3>ROUTER LESSON (APP Comp.)</h3>
 
       {/* STEP First LINK */}
       {/* <a href="/Link1">First Link</a> ==> Page Reloading */}
-      <Link to="/" style={{display: 'block',color:'red'}}>Home</Link> {/* ==> No Page Reloading */}
+      <Link to="/" style={linkStyle}>Home</Link> {/* ==> No Page Reloading */}
       {lineSpace}
-      <Link to="/About">About</Link>{lineSpace}
-      <Link to="/Link01">Link01</Link>{lineSpace}
-      <Link to="/Link02">Link02</Link>
+      <Link to="/About" style={linkStyle}>About</Link>{lineSpace}
+      <Link to="/Link01" style={linkStyle}>Link01</Link>{lineSpace}
+      <Link to="/Link02" style={linkStyle}>Link02</Link>
 
       <hr/>
       {/* STEP Second ROUTE */}
