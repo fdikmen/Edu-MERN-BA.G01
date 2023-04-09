@@ -94,8 +94,8 @@ React Developer Tools, Array.Filter & Array.indexOf
  
 01. LifeCycle - React LifeCycle
 02. React Component LifeCycle 
-     [https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/]
-// Mounting - Updation - Unmounting
+     [https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/] <br/>
+ --  Mounting - Updation - Unmounting
 03. I. Constructor (Mounting)
 04. II. Render -> PURE
 05. III. ComponentDidMount
@@ -106,3 +106,10 @@ React Developer Tools, Array.Filter & Array.indexOf
 10. VIII. getSnapshotBeforeUpdate
 11. FETCHING
 MOCK ==> https://jsonplaceholder.typicode.com/
+
+---
+# 09042023-Keywords
+ 
+01. Fetch (Summary)
+02. Axios
+03. Router
