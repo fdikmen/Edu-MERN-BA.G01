@@ -121,5 +121,6 @@ npm i react-router-dom
 ```
 Project Stop => CTRL + C
 
-04. BrowserRouter (wrapping) - Link - Routes | Route (path-element) - MainLink(Home->/) - 
+04. BrowserRouter (wrapping) - Link - Routes | Route (path-element) <br/>
+MainLink-HomeLink(/) - No Match(*) - Read Parameter - NavLink
 
