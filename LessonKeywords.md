@@ -112,4 +112,10 @@ MOCK ==> https://jsonplaceholder.typicode.com/
  
 01. Fetch (Summary)
 02. Axios
+```Node
+npm i axios
+```
 03. Router
+```Node
+npm i react-router-dom
+```
