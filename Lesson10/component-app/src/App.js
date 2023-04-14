@@ -3,15 +3,9 @@ import axios from 'axios'
 import Post from './components/Post'
 
 export class App extends Component {
-  state = {post:{}, loading: true}
+  state = { posts: {}, loading: true }
 
-  constructor (parameters) {
-    super(parameters);
-    this.fetchData();
-  }
-    
-
-
+  componentDidMount() { this.fetchData() }
   /*fetchData = async () => {
     const response = await axios.get('https://jsonplaceholder.typicode.com/posts/1')
     this.setState({post: response.data, loading: false})
@@ -19,13 +13,13 @@ export class App extends Component {
 
   fetchData = () => {
     axios.get('https://jsonplaceholder.typicode.com/posts')
-    .then(response => { 
-      this.setState({post: response.data, loading: false})
-    })
-    .catch(error => {
-      console.log(error)
-    }
-    )
+      .then(response => {
+        this.setState({ posts: response.data, loading: false })
+      })
+      .catch(error => {
+        console.log(error)
+      }
+      )
   }
 
   render() {
