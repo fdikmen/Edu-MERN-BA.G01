@@ -129,7 +129,22 @@ MainLink-HomeLink(/) - No Match(*) - Read Parameter - NavLink
  
 01. Summary
 02. Advanced Components - Higher Order Component
-03. Redux - npm i redux
-04. UI-View-Comp. => dispatch => ACTION => REDUCER => STORE => subscribe => UI-View-Comp.
+03. Redux - npm i redux react-redux
+
+ Sample;
+npm i redux react-redux axios
+ Means;
+npm i redux
+npm i react-redux
+npm i axios
+
+SAVE???
+npm i [libName] --save
+FORCE?
+npm i [libNAME] -f (or --force)
+
+04. UI-View-Comp. => ACTION => dispatch => STORE => REDUCER => subscribe => UI-View-Comp.
+
+05. createStore , reducer(like function), .getState() , dispatch
 
 
