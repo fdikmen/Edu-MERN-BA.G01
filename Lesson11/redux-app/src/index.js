@@ -1,32 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import { createStore } from 'redux';
+import {createSlice, configureStore} from '@reduxjs/toolkit';
 
 //Step.01:Reducer function
-function counterReducer(state = { count: 0 }, action) {
-  switch (action.type) {
-    case "counter/incremented":
-      return { count: state.count + 1 };
-    case "counter/decremented":
-      return { count: state.count - 1 };
-    default:
-      return state;
+const counterReducer = createSlice({
+  name: 'counter',
+  initialState: { count: 0 },
+  reducers: {
+    increment: (state) => {
+      state.count +=1; //state.count = state.count + 1;
+    },
+    decrement: (state) => {
+      state.count -= 1;
+    }
   }
-}
+});
 
-//Step.02:Create a store
-let myStore = createStore(counterReducer);
+//Step.02:Configure a store
+const myStore = configureStore({
+  reducer: counterReducer.reducer
+});
 
-//Show the State from myStore
+//Step.03:Create an action
+const {increment, decrement} = counterReducer.actions;
+
+//Subscribe to the store
 myStore.subscribe(() => console.log("STORE DATA(State List)=>", myStore.getState()));
 
-//Step.03:Create an action & Step.04:Dispatch the action to the store
-myStore.dispatch({ type: "counter/incremented" });
-myStore.dispatch({ type: "counter/incremented" });
-myStore.dispatch({ type: "counter/incremented" });
-myStore.dispatch({ type: "counter/decremented" });
-
+//Step.04:Dispatch the action to the store
+myStore.dispatch(increment()); //Count: 1
+myStore.dispatch(increment()); //Count: 2
+myStore.dispatch(increment()); //Count: 3
+myStore.dispatch(decrement()); //Count: 2
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -35,3 +41,10 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+
+/*
+var number = 10;
+number = number + 1;
+number += 1;
+*/
