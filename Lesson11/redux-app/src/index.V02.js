@@ -7,7 +7,7 @@ import { createStore } from 'redux';
 function counterReducer(state = { count: 0 }, action) {
   switch (action.type) {
     case "counter/incremented":
-      return { count: state.count + 1 };
+      return { count: action.payload.newCount };
     case "counter/decremented":
       return { count: state.count - 1 };
     default:
@@ -18,15 +18,23 @@ function counterReducer(state = { count: 0 }, action) {
 //Step.02:Create a store
 let myStore = createStore(counterReducer);
 
-//Show the State from myStore
-myStore.subscribe(() => console.log("STORE DATA(State List)=>", myStore.getState()));
+//Show the initial state
+console.log("STORE DATA-V1=>", myStore.getState());
 
-//Step.03:Create an action & Step.04:Dispatch the action to the store
-myStore.dispatch({ type: "counter/incremented" });
-myStore.dispatch({ type: "counter/incremented" });
-myStore.dispatch({ type: "counter/incremented" });
-myStore.dispatch({ type: "counter/decremented" });
+//Step.03:Create an action
+const action01 = { type: "counter/incremented" ,payload: {newCount: 12}};
+const action02 = { type: "counter/decremented" };
 
+//Step.04:Dispatch the action to the store
+myStore.dispatch(action01);
+
+//show the state after FIRST dispatching the action
+console.log("STORE DATA-V2=>", myStore.getState());
+
+myStore.dispatch(action02);
+
+//show the state after SECOND dispatching the action
+console.log("STORE DATA-V3=>", myStore.getState());
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -147,4 +147,6 @@ npm i [libNAME] -f (or --force)
 
 05. createStore , reducer(like function), .getState() , dispatch
 
+06. npm i @reduxjs/toolkit
+
 
