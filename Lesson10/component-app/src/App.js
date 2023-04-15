@@ -5,18 +5,16 @@ import User from './components/User'
 
 export class App extends Component {
   state = { posts: {},users: {} }
-
   componentDidMount() { this.fetchPOSTData();this.fetchUSERData() }
   /*fetchData = async () => {
     const response = await axios.get('https://jsonplaceholder.typicode.com/posts/1')
     this.setState({post: response.data, loading: false})
   }*/
-
   fetchPOSTData = () => {
     axios.get('https://jsonplaceholder.typicode.com/posts')
       .then(response => {
         setTimeout(() => {
-          this.setState({ posts: response.data, loading: false })
+          this.setState({ posts: response.data})
         }
           , 1000)
       })
@@ -25,12 +23,11 @@ export class App extends Component {
       }
       )
   }
-
   fetchUSERData = () => {
     axios.get('https://jsonplaceholder.typicode.com/users')
       .then(response => {
         setTimeout(() => {
-          this.setState({ users: response.data, loading: false })
+          this.setState({ users: response.data})
         }
           , 3000)
       })
@@ -39,7 +36,6 @@ export class App extends Component {
       }
       )
   }
-
   render() {
     return (
       <div>

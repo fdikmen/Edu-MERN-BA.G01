@@ -2,7 +2,7 @@
 
 import React, { Component } from "react";
 
-const LoaderHoc = (WrappedComponent,field) => {
+/*const LoaderHoc = (WrappedComponent,field) => {
   return class LoaderHoc extends Component {
     render() {        
     console.log("HOC PROPS=>",this.props);
@@ -13,6 +13,14 @@ const LoaderHoc = (WrappedComponent,field) => {
       );
     }
   };
-};
+};*/
+
+const LoaderHoc = (WrappedComponent, field) => {
+  return (props) => props[field].length > 0 
+  ? (  <WrappedComponent {...props}></WrappedComponent>)
+  : (    <div>Loading...</div>  );
+}
+
+
 
 export default LoaderHoc;

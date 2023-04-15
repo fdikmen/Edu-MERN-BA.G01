@@ -128,5 +128,5 @@ MainLink-HomeLink(/) - No Match(*) - Read Parameter - NavLink
 # 14042023-Keywords
  
 01. Summary
-02. Higher Order Component
+02. Advanced Components - Higher Order Component
 
