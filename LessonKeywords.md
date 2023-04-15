@@ -129,5 +129,7 @@ MainLink-HomeLink(/) - No Match(*) - Read Parameter - NavLink
  
 01. Summary
 02. Advanced Components - Higher Order Component
-03. Redux
+03. Redux - npm i redux
+04. UI-View-Comp. => dispatch => ACTION => REDUCER => STORE => subscribe => UI-View-Comp.
+
 
