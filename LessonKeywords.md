@@ -149,4 +149,7 @@ npm i [libNAME] -f (or --force)
 
 06. npm i @reduxjs/toolkit
 
+ Intellisense -> Suggest
+ Snippet -> ShortCut
+
 

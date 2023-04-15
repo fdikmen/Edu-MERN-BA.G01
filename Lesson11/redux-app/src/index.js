@@ -42,9 +42,3 @@ root.render(
   </React.StrictMode>
 );
 
-
-/*
-var number = 10;
-number = number + 1;
-number += 1;
-*/
