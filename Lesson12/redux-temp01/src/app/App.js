@@ -1,8 +1,10 @@
+import HomePage from "../pages/HomePage";
+
 function App() {
   return (
-    <div>
-      <h1>Redux Temp01</h1>
-    </div>
+   <>
+   <HomePage/>
+   </>
   );
 }
 
