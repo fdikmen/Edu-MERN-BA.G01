@@ -56,3 +56,38 @@ Bu proje için aşağıdaki kurallar geçerlidir:
 - https://redux.js.org/introduction/examples
 
 - https://medium.com/@fdikmen/a-redux-toolkit-project-structure-guide-58093baa88a5
+
+
+```bash
+src/
+  |- app/
+     |- App.js                # Main React component
+     |- store.js              # Redux Toolkit store configuration
+  |- features/
+     |- movies/
+        |- moviesSlice.js    # Redux Toolkit Slice configuration for movies
+        |- MoviesPage.js     # MoviesPage component
+        |- MovieForm.js      # MovieForm component
+        |- NewMoviePage.js   # NewMoviePage component
+        |- MovieAPI.js       # API calls related to movies
+        |- MovieCard.js      # MovieCard component
+        |- MoviesList.js     # MoviesList component
+  |- components/
+     |- Header.js             # Header component
+     |- Footer.js             # Footer component
+  |- pages/
+     |- HomePage.js           # HomePage component
+  |- hooks/
+     |- useLocalStorage.js    # Custom hook for storing data in localStorage
+     |- useFetch.js           # Custom hook for fetching data from an API
+  |- utils/
+     |- utilityFunctions.js   # Helper functions
+  |- API/
+     |- index.js              # API exports
+  |- config/
+     |- config.js             # Application configuration file
+  |- router/
+     |- index.js              # React Router configuration
+  |- .env                     # Environment variables
+  |- index.js                 # Application entry file
+```
