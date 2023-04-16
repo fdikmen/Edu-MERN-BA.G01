@@ -195,7 +195,15 @@ Create Store
 
 https://jsonplaceholder.typicode.com/users/2
 
+- middleware
+
+- HOOKS
+- STATE => useState
+- LIFECYCLE => useEffect
+
+next suggest => [Next.JS]
 ---
+# 28042023-Keywords
 
 
 

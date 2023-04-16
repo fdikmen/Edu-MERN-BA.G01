@@ -9,8 +9,16 @@ export class ClassComponents extends Component {
     decrement = () => {
         this.setState({counter:this.state.counter-1})
     }
+
+    componentDidMount() { // lifecycle method
+        console.log("Class ComponentDidMount") }
+    componentDidUpdate() { // lifecycle method
+        console.log("Class ComponentDidUpdate") }
+    componentWillUnmount() { // lifecycle method
+        console.log("Class ComponentWillUnmount") }
+
   render() {
-    console.log("Class Component",this.state)
+    //console.log("Class Component",this.state)
     return (
       <div>
         <h1>Class Components</h1>

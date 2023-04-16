@@ -1,5 +1,5 @@
 // Created by "rfce" snippet
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 function FunctionalComponents() {
     const [counter, setCounter] = useState(0)
@@ -12,7 +12,20 @@ function FunctionalComponents() {
         setCounter(counter-1)
     }
 
-    console.log("Func Component",counter,title)
+    //like LIFE CYCLE METHODS
+    useEffect(() => {
+        console.log("Func ComponentDidMount with UseEffect01")
+        return () => {
+            console.log("Func ComponentWillUnmount with UseEffect01")
+        }
+    }, [])
+
+    useEffect(() => {
+        console.log("Func ComponentDidUpdate with UseEffect02")
+    }, [counter,title])
+    
+
+   //console.log("Func Component",counter,title)
   return (
     <div>
         <h1>Functional Components</h1>
