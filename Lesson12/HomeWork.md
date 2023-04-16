@@ -57,6 +57,10 @@ Bu proje için aşağıdaki kurallar geçerlidir:
 
 - https://medium.com/@fdikmen/a-redux-toolkit-project-structure-guide-58093baa88a5
 
+- https://codesandbox.io/s/github/reduxjs/redux-essentials-example-app/tree/checkpoint-1-postAdded/?from-embed=&file=/src/features/posts/PostsList.js
+
+- https://codesandbox.io/s/simple-fetch-api-using-redux-toolkit-axios-forked-evd9v3?file=/src/features/todoSlice.js
+
 
 ```bash
 src/
