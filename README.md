@@ -183,7 +183,7 @@ https://github.com/fdikmen/BA40FS_MERN/blob/main/Lesson12/HomeWork.md
 
 https://redux-toolkit.js.org/introduction/getting-started
 
-### npx create-react-app my-app --template redux
+### npx create-react-app [appName] --template redux
  ```bash
 npx create-react-app [appName]
 npm i @redux-toolkit
