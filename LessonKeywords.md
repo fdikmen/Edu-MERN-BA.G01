@@ -152,4 +152,39 @@ npm i [libNAME] -f (or --force)
  Intellisense -> Suggest
  Snippet -> ShortCut
 
+---
+# 15042023-Keywords
+
+https://medium.com/@fdikmen/a-redux-toolkit-project-structure-guide-58093baa88a5
+
+Home Work;
+
+https://github.com/fdikmen/BA40FS_MERN/blob/main/Lesson12/HomeWork.md
+
+
+- redux-toolkit RTK
+- Folder structure
+
+- Slice (IntialState - Name - Reducer - Aciton)
+- Store
+- Provider
+- useDispatch
+- redux devTools Extension
+- useSelector
+
+https://redux-toolkit.js.org/introduction/getting-started
+
+### npx create-react-app my-app --template redux
+ ```bash
+npx create-react-app [appName]
+npm i @redux-toolkit
+npm i react-redux
+Create Folder Structure
+Create Sample Files (Comp., Slice)
+Create Store 
+``` 
+
+https://jsonplaceholder.typicode.com/users/2
+
+
 
