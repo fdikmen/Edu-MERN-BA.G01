@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import { InView } from 'react-intersection-observer'
-import {Container} from 'semantic-ui-react'
+import { Container } from 'semantic-ui-react'
 import PageHeader from '../components/PageHeader'
 import PageFooter from '../components/PageFooter'
+import RootRouter from '../router/RootRouter'
+
 
 
 const overlayStyle = {
@@ -25,12 +27,14 @@ export default class HomePage extends Component {
             <div>
                 <PageHeader />
 
-                <Container text>
+                <Container text style={{minHeight: 300,}}>
                     <InView onChange={this.toggleOverlay} rootMargin='0px 0px 80px 0px'>
                         <div style={overlayFixed ? { ...overlayStyle, ...overlayRect } : {}} />
                     </InView>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nullam ipsum purus, bibendum sit amet vulputate eget
+
+                    <RootRouter />
+
+
                 </Container>
 
                 <PageFooter />

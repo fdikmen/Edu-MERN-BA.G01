@@ -64,3 +64,15 @@ LeftImage, RightImage, Paragraph, style, Container->Header
 
 ---
 ### C. React Router
+
+16. npm i react-router-dom (from https://www.npmjs.com/package/react-router-dom)
+
+17. add <BrowserRouter> in APP.JS
+
+18. add Links in PageHeader.js
+
+19. Create new components (/features/movie/MovieAdd.js /features/movie/MovieList.js) by "RFC" snippet
+
+20. Create Route codes in RootRouter files.
+import rootrouter in HomePage.js.
+

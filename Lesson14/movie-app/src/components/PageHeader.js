@@ -6,6 +6,7 @@ import {
   Menu,
 } from 'semantic-ui-react'
 import logo from '../logo.svg';
+import { Link } from 'react-router-dom';
 const menuStyle = {
     border: 'none',
     borderRadius: 0,
@@ -40,12 +41,13 @@ export default class PageHeader extends Component {
             style={menuFixed ? fixedMenuStyle : menuStyle}
           >
             <Container text>
-              <Menu.Item>
+              <Menu.Item  as={Link} to="/">
                 <Image size='mini' src={logo} />
               </Menu.Item>
-              <Menu.Item header>Movie App</Menu.Item>
-              <Menu.Item as='a'>Add</Menu.Item>
-              <Menu.Item as='a'>List</Menu.Item>
+              <Menu.Item as={Link} to="/"header>Movie App</Menu.Item>
+              <Menu.Item as={Link} to="/Add">Add</Menu.Item>
+              <Menu.Item as={Link} to="/List">List</Menu.Item>
+              {/* <Link to="/Test">Test</Link> */}
             </Container>
           </Menu>
         </InView>
