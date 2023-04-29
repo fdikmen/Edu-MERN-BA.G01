@@ -63,16 +63,37 @@ LeftImage, RightImage, Paragraph, style, Container->Header
 - Make very clear components.
 
 ---
-### C. React Router
+### C. Configure React-Router-Dom
 
 16. npm i react-router-dom (from https://www.npmjs.com/package/react-router-dom)
 
-17. add <BrowserRouter> in APP.JS
+17. add <BrowserRouter> to index.js
 
-18. add Links in PageHeader.js
+18. add Links to menu in PageHeader.js
 
 19. Create new components (/features/movie/MovieAdd.js /features/movie/MovieList.js) by "RFC" snippet
 
 20. Create Route codes in RootRouter files.
 import rootrouter in HomePage.js.
 
+---
+### D. Create MockAPI
+
+21. Create custom api link (https://mockapi.io/)
+Fields: id, createdAt, title, avatar, category, country, year, imdb_score
+
+---
+### E. Using generic axios
+
+22. instal axios (npm i axios)
+23. Define generic Axios base-url (config/axiosConfig.js)
+
+---
+### F. Configure React-Redux-RTK
+
+24. Create movieSlice.js file AND Define reducer (slice) with "rxslice" snippet (movieSlice.js)
+25. Add reducer to store.js (movieSlice.js)
+26. Create reducer method for fetchMovies with asyncThunkMiddleware (movieSlice.js)
+27. Define rejected, fullfilled, pending case for fetchMovies Reducer (movieSlice.js)
+28. Subscribe states with useSelector (MovieList.js)
+29. dispatch fetchMovies in useEffect (MovieList.js)
