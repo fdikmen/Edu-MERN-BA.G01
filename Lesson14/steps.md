@@ -17,7 +17,51 @@ setupTests.js, reportWebVitals.js, index.css, App.test.js, App.css, counter Fold
 06. Delete Default/Unnecessary Codes (from App.js)
 
 ---
-### B.
+### B. Using a UI Library
 
-07. 
+07. Install SemanticUI from https://react.semantic-ui.com/
+https://react.semantic-ui.com/usage
+```node
+npm install semantic-ui-react semantic-ui-css
+```
+in index.js
+```node
+import 'semantic-ui-css/semantic.min.css'
+```
+
+08. Test SemanticUI in App.js (OPTIONAL)
+https://react.semantic-ui.com/elements/image/#variations-vertically-aligned
+
+```
+import { Divider, Image } from 'semantic-ui-react'
+```
+
+```
+ <div>
+    <Image src={logo} size='tiny' verticalAlign='middle' />
+    <span>Middle Aligned</span>
+    <Divider />
+  </div>
+```
+09. Create page/HomePage.js
+10. Using Layout Template
+https://react.semantic-ui.com/layouts
+https://github.com/Semantic-Org/Semantic-UI-React/blob/master/docs/src/layouts/StickyLayout.js
+
+
+11. Change componentName (HomePage.js)
+
+12. import HomePage in APP.JS
+```
+npm i react-intersection-observer
+```
+
+13. Delete codes from template
+
+LeftImage, RightImage, Paragraph, style, Container->Header
+
+14. Create PageHeader.js / PageFooter.js with "RCC" snippet
+
+15. Move Header Codes to PageHeader.js 
+
 
