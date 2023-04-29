@@ -13,9 +13,9 @@ setupTests.js, reportWebVitals.js, index.css, App.test.js, App.css, counter Fold
 04. Bug Fix: For Import
 05. Delete Default Codes (from App.js)
 06. Movie App.js to app folder.
----
 
+---
 ### B.
 
-07.
+07. 
 
