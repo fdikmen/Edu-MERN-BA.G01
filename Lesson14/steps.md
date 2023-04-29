@@ -3,8 +3,10 @@
 ### A. Redux installation and Deletion of Unnecessary Files.
 
 01. Install Redux Template
+```node
 # Redux + Plain JS template
 npx create-react-app my-app --template redux
+```
 02. Test Project
 cd movie-app
   npm start
