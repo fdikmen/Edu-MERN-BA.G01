@@ -1,3 +1,6 @@
+## REACT MOVIE APP - STEPS
+
+### A. Redux installation and Deletion of Unnecessary Files.
 
 01. Install Redux Template
 # Redux + Plain JS template
@@ -10,3 +13,9 @@ setupTests.js, reportWebVitals.js, index.css, App.test.js, App.css, counter Fold
 04. Bug Fix: For Import
 05. Delete Default Codes (from App.js)
 06. Movie App.js to app folder.
+---
+
+### B.
+
+07.
+
