@@ -3,6 +3,7 @@ import { useSelector,useDispatch } from 'react-redux'
 import { fetchMovies } from './movieSlice'
 
 export default function MovieList() {
+  //useSelector subscribes to the Redux store (states)
   const movies = useSelector(state => state.movies.movies)
   const status = useSelector(state => state.movies.status)
   const error = useSelector(state => state.movies.error)
@@ -12,7 +13,7 @@ export default function MovieList() {
   useEffect(() => {
     dispatch(fetchMovies())
   }, 
-  [dispatch] //componentDidMount
+  [dispatch] //componentDidMount + componentDidUpdate
   )
 
   if (status === 'loading') {
