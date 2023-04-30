@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
-import { useSelector,useDispatch } from 'react-redux'
-import { fetchMovies } from './movieSlice'
+import { useSelector, useDispatch } from 'react-redux'
+import { fetchMovies, deleteMovie } from './movieSlice'
+import { Link } from 'react-router-dom'
 
 export default function MovieList() {
   //useSelector subscribes to the Redux store (states)
@@ -12,9 +13,13 @@ export default function MovieList() {
 
   useEffect(() => {
     dispatch(fetchMovies())
-  }, 
-  [dispatch] //componentDidMount + componentDidUpdate
+  },
+    [dispatch] //componentDidMount + componentDidUpdate
   )
+
+  const handleDelete = (id) => {
+    dispatch(deleteMovie(id))
+  }
 
   if (status === 'loading') {
     return <div>Loading...</div>
@@ -28,10 +33,12 @@ export default function MovieList() {
     <div>
       <h1>Movie List</h1>
       <div>
-        {movies.map((movie,index) => (
+        {movies.map((movie, index) => (
           <p key={movie.id}>
-            {index+1}. <b>{movie.title}</b> {movie.category} {movie.createdAt}
-            </p>
+            {index + 1}. <b>{movie.title}</b> {movie.category} {movie.createdAt}
+            <button onClick={() => handleDelete(movie.id)}>Delete</button>
+            <Link to={'/Edit/'+movie.id}>Edit</Link>
+          </p>
         ))}
       </div>
     </div>

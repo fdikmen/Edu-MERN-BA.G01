@@ -10,6 +10,7 @@ export default function RootRouter() {
                 <Route path="/" element={<h1>Home Page</h1>} />
                 <Route path="/Add" element={<MovieAdd/>} />
                 <Route path="/List" element={<MovieList/>} />
+                <Route path="/Edit/:id" element={<MovieAdd/>} />
             </Routes>
         </>
     )

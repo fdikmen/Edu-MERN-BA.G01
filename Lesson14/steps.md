@@ -98,17 +98,31 @@ Fields: id, createdAt, title, avatar, category, country, year, imdb_score
 28. Subscribe states with useSelector (MovieList.js)
 29. dispatch fetchMovies in useEffect (MovieList.js)
 
-
 ---
 ### G. Add Create Movie Aciton & Form
 
 30. Create a ADD FORM (MovieAdd.js)
-31. Create a action for createMovie & congfigure extraReducers for createMovie  (movieSlice.js)
-32. Coding handleSubmit methods (MovieAdd.js)
-
+31. Define createMovie Aciton (movieSlice.js)
+32. Define extreReducers for createMovie (movieSlice.js)
+33. Create a handleSubmit methods (MovieAdd.js)
 
 ---
 ### H. Add DELETE Movie Aciton & Form
+34. Define deleteMovie Aciton (movieSlice.js)
+35. Define extreReducers for deleteMovie (movieSlice.js)
+36. Create a Delete Button & Create a handleDelete (MovieList.js)
 
 ---
 ### I. Add UPDATE Movie Aciton & Form
+
+37. Define updateMovie Aciton (movieSlice.js)
+38. Define extreReducers for updateMovie (movieSlice.js)
+
+39. Create Link for Edit (MovieList.js)
+39. Create Link & Route Configure for Edit (RootRouter.js)
+
+40. Define fetchMovieById Aciton (movieSlice.js)
+41. Define extreReducers for fetchMovieById & Define selectedMovie state(movieSlice.js) 
+42. Get data from fetchMovieById to ADD-FORM (MovieAdd.js)
+
+43. dispatch updateMovie (MovieAdd.js)
