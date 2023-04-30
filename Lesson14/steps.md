@@ -97,3 +97,18 @@ Fields: id, createdAt, title, avatar, category, country, year, imdb_score
 27. Define rejected, fullfilled, pending case for fetchMovies Reducer (movieSlice.js)
 28. Subscribe states with useSelector (MovieList.js)
 29. dispatch fetchMovies in useEffect (MovieList.js)
+
+
+---
+### G. Add Create Movie Aciton & Form
+
+30. Create a ADD FORM (MovieAdd.js)
+31. Create a action for createMovie & congfigure extraReducers for createMovie  (movieSlice.js)
+32. Coding handleSubmit methods (MovieAdd.js)
+
+
+---
+### H. Add DELETE Movie Aciton & Form
+
+---
+### I. Add UPDATE Movie Aciton & Form
