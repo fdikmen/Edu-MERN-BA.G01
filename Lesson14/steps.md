@@ -126,3 +126,20 @@ Fields: id, createdAt, title, avatar, category, country, year, imdb_score
 42. Get data from fetchMovieById to ADD-FORM (MovieAdd.js)
 
 43. dispatch updateMovie (MovieAdd.js)
+
+---
+### J. BUG FIXED
+44. BUG::: When you click edit, the wrong item comes up
+
+---
+### K. Improving the UI
+45. Using SemanticUI Components
+ - FOR FORM PAGE
+    - GRID => https://react.semantic-ui.com/collections/grid/#variations-column-width
+    - FORM => https://react.semantic-ui.com/collections/form/
+    - BUTTON => https://react.semantic-ui.com/elements/button/
+    - CARD => https://react.semantic-ui.com/views/card/
+
+---
+### L. Deploy
+46. Publish APP to Hosting/Server => npm run build

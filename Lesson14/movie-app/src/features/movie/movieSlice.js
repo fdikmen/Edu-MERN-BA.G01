@@ -17,7 +17,7 @@ export const fetchMovies = createAsyncThunk(
 export const fetchMovieById = createAsyncThunk(
     'movies/fetchMovieById',
     async (id) => {
-        const response = await API.get('/movies/'+id)
+        const response = await API.get('/movies/' + id)
         return response.data
     }
 )
@@ -48,7 +48,7 @@ export const deleteMovie = createAsyncThunk(
 export const updateMovie = createAsyncThunk(
     'movies/updateMovie',
     async (updatedMovie) => {
-        const response = await API.put('/movies/'+updatedMovie.id, updatedMovie)
+        const response = await API.put('/movies/' + updatedMovie.id, updatedMovie)
         return response.data
     }
 )
@@ -64,6 +64,10 @@ const movieSlice = createSlice({
     name: "movies",
     initialState,
     reducers: {
+        // REDUCER TO CLEAR SELECTED-MOVIE
+        clearSelectedMovie: (state) => {
+            state.selectedMovie = null
+        },
     },
     extraReducers: (builder) => {
         builder
@@ -138,6 +142,6 @@ const movieSlice = createSlice({
     }
 });
 
-export const { } = movieSlice.actions
+export const {clearSelectedMovie } = movieSlice.actions
 
 export default movieSlice.reducer
