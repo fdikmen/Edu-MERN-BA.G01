@@ -213,7 +213,7 @@ npm i -y --> start file(package.json)
 Global ==> npm i -g [packageName] -|- npm i --global [packageName]
 Local  ==> npm i [packageName]
 
-````
+```node
 npm list -g
 npm list -g --depth=0
 ```
@@ -222,28 +222,32 @@ Windows     Console Clear => cls
 MacOS/Linux Console Clear => clear
 
 Use global package
-```
+
+```node
 npm link [package]
 ```
 
 04. Create a Project with npm
 (Create a package.json file)
 Manuel
-```
+
+```node
 npm init
 ```
 Auto
-```
+
+```node
 npm init -y
 ```
 Settings Sample
-```
+
+```node
 npm set init.author.name "fdikmen" ===> npm config ls -l
 ```
 
 05. Install a Module (Lib)
 
-```
+```node
 npm install [moduleName]
 npm i [moduleName]
 ```
@@ -260,38 +264,43 @@ https://choosealicense.com/licenses/
 08. -s --save --no-save
 
 09. Old Version
-Install specific vesion for package
-```
+Install Custom vesion for package
+
+```node
 npm i [packageName]@[Version] 
 ```
 List outdated packages
-```
+
+```node
 npm outdated
 ```
 Update packages
-```
+
+```node
 npm update
 ```
 
 10. Package for Developer 
-````
+
+```node
 npm i [packageName] --save-dev
 ```
 
 11. Define script in package.json file
-```
+
+```node
 npm run [commandName]
 ```
 
 12. Install Multiple Package
 
-```
+```node
 npm i [packageName01] [packageName02] [packageName03] ...
 ```
 
 13. Remove a Package
 
-```
+```node
 npm uninstall [packageName]
 ```
 
