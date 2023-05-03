@@ -1,0 +1,23 @@
+{
+  "name": "firstproject",
+  "version": "1.0.0",
+  "description": "xxxxxxx",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github.com/fdikmen.git"
+  },
+  "keywords": [
+    "test",
+    "app"
+  ],
+  "author": "fdikmen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/github.com/fdikmen/issues"
+  },
+  "homepage": "https://github.com/github.com/fdikmen#readme"
+}

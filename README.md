@@ -221,3 +221,78 @@ npm list -g --depth=0
 Windows     Console Clear => cls
 MacOS/Linux Console Clear => clear
 
+Use global package
+```
+npm link [package]
+```
+
+04. Create a Project with npm
+(Create a package.json file)
+Manuel
+```
+npm init
+```
+Auto
+```
+npm init -y
+```
+Settings Sample
+```
+npm set init.author.name "fdikmen" ===> npm config ls -l
+```
+
+05. Install a Module (Lib)
+
+```
+npm install [moduleName]
+npm i [moduleName]
+```
+
+06. License
+
+https://choosealicense.com/licenses/ 
+
+07. npm-cache
+
+- npm i npm-cache
+- npm i [packageName] => npm-cahce install [packageName]
+
+08. -s --save --no-save
+
+09. Old Version
+Install specific vesion for package
+```
+npm i [packageName]@[Version] 
+```
+List outdated packages
+```
+npm outdated
+```
+Update packages
+```
+npm update
+```
+
+10. Package for Developer 
+````
+npm i [packageName] --save-dev
+```
+
+11. Define script in package.json file
+```
+npm run [commandName]
+```
+
+12. Install Multiple Package
+
+```
+npm i [packageName01] [packageName02] [packageName03] ...
+```
+
+13. Remove a Package
+
+```
+npm uninstall [packageName]
+```
+
+
