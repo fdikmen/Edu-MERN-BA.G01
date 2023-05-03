@@ -61,7 +61,6 @@ export default function MovieAdd() {
     }
     else { alert("Please fill in the blanks") }
 
-
   }
 
   return (

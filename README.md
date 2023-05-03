@@ -199,3 +199,25 @@ next suggest => [**Next.JS**]
 02. API - Http Methods (CRUD)
 03. mockapi.ai
 04. Postman
+
+---
+### 03052023-Keywords
+
+01. NPM?
+npm i [packageName]  -|- npm install [packageName]
+npm i -y --> start file(package.json)
+
+02. import (React) vs require (NodeJS)
+
+03. Global vs Local Package
+Global ==> npm i -g [packageName] -|- npm i --global [packageName]
+Local  ==> npm i [packageName]
+
+````
+npm list -g
+npm list -g --depth=0
+```
+
+Windows     Console Clear => cls
+MacOS/Linux Console Clear => clear
+
