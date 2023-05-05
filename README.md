@@ -214,7 +214,7 @@ npm init
 npm init -y
 ```
 
-02. import (React) vs require (NodeJS)
+02. import (React) vs require (NodeJS) <br/>
 React
 ```
 import [CustomName] from '[libName]'
