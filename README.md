@@ -225,10 +225,17 @@ const [CustomName] = require('[libName]')
 const slugify = require('slugify') 
 ```
 
-03. Global vs Local Package
-Global ==> npm i -g [packageName] -|- npm i --global [packageName]
-Local  ==> npm i [packageName]
-
+03. Global vs Local Package <br/>
+Global
+```
+npm i -g [packageName] 
+npm i --global [packageName]
+````
+Local
+```
+npm i [packageName]
+```
+Global Package List
 ```node
 npm list -g
 npm list -g --depth=0
