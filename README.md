@@ -327,7 +327,26 @@ npm i [packageName01] [packageName02] [packageName03] ...
 npm uninstall [packageName]
 ```
 
+14. Stop Command on Termianl
+[CTRL + C]
+
+15. Start NodeJS Project
+```
+node [mainFileName]
+```
 ---
 ### 05052023-Keywords
+
+01. Event & Emitter
+```
+// import events module
+const events = require('events')
+// create an eventEmitter object for management events
+const eventEmitter = new events.EventEmitter()
+```
+For Create => on <br/>
+For Trigger => emit
+
+02. __filename & __dirname
 
 
