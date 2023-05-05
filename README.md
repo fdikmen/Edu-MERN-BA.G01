@@ -204,8 +204,15 @@ next suggest => [**Next.JS**]
 ### 03052023-Keywords
 
 01. NPM?
-npm i [packageName]  -|- npm install [packageName]
-npm i -y --> start file(package.json)
+```
+npm i [packageName]
+npm install [packageName]
+```
+Project Start File --> start file(package.json)
+```
+npm init
+npm init -y
+```
 
 02. import (React) vs require (NodeJS)
 
@@ -303,5 +310,8 @@ npm i [packageName01] [packageName02] [packageName03] ...
 ```node
 npm uninstall [packageName]
 ```
+
+---
+### 05052023-Keywords
 
 
