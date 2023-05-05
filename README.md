@@ -215,6 +215,15 @@ npm init -y
 ```
 
 02. import (React) vs require (NodeJS)
+React
+```
+import [CustomName] from '[libName]'
+```
+NodeJS
+```
+const [CustomName] = require('[libName]')
+const slugify = require('slugify') 
+```
 
 03. Global vs Local Package
 Global ==> npm i -g [packageName] -|- npm i --global [packageName]
