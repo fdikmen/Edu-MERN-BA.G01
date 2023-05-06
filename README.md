@@ -360,5 +360,14 @@ npm Intellisense, ESLint, REST Client, ShortCuts for VSCode [https://code.visual
 05. File System (require('fs'))
 Read File - Write File - Remove File
 06. HTTP Server
+07. nodemon
+```
+npm install -g nodemon (Windows - MacOS - Linux)
+sudo npm install -g nodemon (Optional -> MacOS - Linux)
+```
+08. HTML doc serve with http nodejs server
+09. HTTP Methods
+10. Route Example
+
 
 
