@@ -9,14 +9,19 @@ const eventEmitter = new events.EventEmitter()
 // eventEmitter.on('eventName', eventHandler)
 // sample
 eventEmitter.on('sayhi', (name) => {console.log('Hi!', name)})
-eventEmitter.on('sayhello',function(name){console.log('Hello!', name)})
+// trigger an event once
+eventEmitter.once('sayhello',function(name){console.log('Hello!', name)})
+
+function sayAge(age){
+    console.log(`Hello! Im ${age} years old.`)
+}
+eventEmitter.on('sayage', sayAge) // call function (callback)
 
 // trigger an event
 // eventEmitter.emit('eventName')
 // sample
 eventEmitter.emit('sayhi')
-// trigger an event once
-// eventEmitter.once('sayhello')
+// eventEmitter.emit('sayhello')
 
 let counter = 0
 setInterval(() => {

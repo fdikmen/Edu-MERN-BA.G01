@@ -349,4 +349,16 @@ For Trigger => emit
 
 02. __filename & __dirname
 
+---
+### 06052023-Keywords
+
+01. Summary & BUG FIXED: once
+02. Extensions for NodeJS
+npm Intellisense, ESLint, REST Client, ShortCuts for VSCode [https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf]
+03. Callback Function
+04. Promise => function.then(+).catch(-)
+05. File System (require('fs'))
+Read File - Write File - Remove File
+06. HTTP Server
+
 
