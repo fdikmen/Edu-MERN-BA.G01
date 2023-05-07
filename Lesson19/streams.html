@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>NodeJS Streaming</h1>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="stream-diagram animate" viewBox="0 0 688.5 418.5" style="position:absolute;top:0;left:0;width:100%;height:100%"><defs><style>
+@font-face {
+  font-family: 'Just Another Hand';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/justanotherhand/v7/fKV8XYuRNNagXr38eqbRf8DbBFScDQWNirGEA9Q9Yto.woff) format('woff');
+}
+.stream-diagram .color-in {
+  fill: none;
+  stroke: #0045d6;
+  stroke-width: 16.6;
+  stroke-opacity: 0.23;
+}
+.stream-diagram .color-in-heading {
+  fill: none;
+  stroke: #009800;
+  stroke-width: 12.8;
+  stroke-opacity: 0.23;
+}
+.stream-diagram .label {
+  font-size: 60.47px;
+  line-height: 125%;
+  font-family: 'Just Another Hand';
+  fill: #000000;
+  text-anchor: middle;
+}
+.stream-diagram .heading {
+  font-size: 50.7px;
+}
+.stream-diagram .outline {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 9.1;
+}
+.stream-diagram .data-flow  {
+  fill: none;
+  stroke: #00c871;
+  stroke-linecap: round;
+}
+.stream-diagram .data-flow.stream {
+  stroke-width: 9.6;
+}
+.stream-diagram .data-flow.buffer {
+  stroke-width: 37.4;
+}
+.stream-diagram .buffer.fetch {
+  stroke-dasharray: 0, 300;
+  stroke-dashoffset: -15;
+}
+.animate.stream-diagram .buffer.fetch {
+  animation: stream-diagram-buffer-fetch 5s linear infinite both;
+}
+.stream-diagram .buffer.process {
+  stroke-dasharray: 0, 300;
+  stroke-dashoffset: -40;
+}
+.animate.stream-diagram .buffer.process {
+  animation: stream-diagram-buffer-process 5s linear infinite both;
+}
+.stream-diagram .stream.fetch {
+  stroke-dasharray: 0, 16, 0, 16, 0, 16, 0, 16, 0, 16, 0, 16, 0, 16, 0, 16, 0, 16, 0, 300;
+  stroke-dashoffset: 130;
+}
+.animate.stream-diagram .stream.fetch {
+  animation: stream-diagram-stream-fetch 5s linear infinite both;
+}
+.stream-diagram .stream.process {
+  stroke-dasharray: 0, 49.33, 0, 49.33, 0, 49.33, 0, 49.33, 0, 49.33, 0, 49.33, 0, 49.33, 0, 49.33, 0, 49.33, 0, 300;
+  stroke-dashoffset: 427;
+}
+.animate.stream-diagram .stream.process {
+  animation: stream-diagram-stream-process 5s linear infinite both;
+}
+@keyframes stream-diagram-buffer-fetch {
+74% {
+stroke-dashoffset: -185;
+}
+to {
+stroke-dashoffset: -185;
+}
+}
+@keyframes stream-diagram-buffer-process {
+76% {
+stroke-dashoffset: -40;
+}
+to {
+stroke-dashoffset: -205;
+}
+}
+@keyframes stream-diagram-stream-fetch {
+74% {
+stroke-dashoffset: -156;
+}
+to {
+stroke-dashoffset: -156;
+}
+}
+@keyframes stream-diagram-stream-process {
+36% {
+stroke-dashoffset: 427;
+}
+85% {
+stroke-dashoffset: -150;
+}
+to {
+stroke-dashoffset: -150;
+}
+}
+</style><clipPath id="a"><path d="M154.8 116.2l1.6 52.7 135.6 1.3 2.7-56.3"></path></clipPath><clipPath id="b"><path d="M435.6 117l2.7 56.4 133-1-3.6-58.6"></path></clipPath><clipPath id="c"><path d="M154.6 369.5v29.2l136.8 1 2.8-30.8"></path></clipPath><clipPath id="d"><path d="M159.2 373.6l1 23L286 395l-.6-21"></path></clipPath></defs><path transform="translate(-22.504 -15.426)" clip-path="url(#a)" d="M124 144l250-1" class="data-flow buffer fetch"></path><path transform="translate(-22.504 -15.426)" class="data-flow buffer process" d="M380 145l270-1" clip-path="url(#b)"></path><path transform="translate(-22.504 -15.426)" clip-path="url(#c)" d="M140 385l200-.6" class="data-flow stream fetch"></path><path transform="translate(257.496 -15.426)" class="data-flow stream process" d="M140 385l170-.6" clip-path="url(#d)"></path><path class="color-in-heading" d="M397.8 252l-150-1.6 190.5 12.2-189 1.2 189 11-192.8 2.4 194 6-189 6.2 189 3.7-162.2 4.6 163.5 4-36.6 2.6M365.8 8l-136-1.6 224.5 12.2-223 1.2 229 11-232.8 2.4 228 6-223 6.2 223 3.7-196.2 4.6 197.5 4-36.6 2.6"></path><text class="label heading" x="341.8" y="42.8">Without streaming</text><g id="e"><path class="color-in" d="M417.5 86.5l-160.6-1 167.7 17-164.2.8L430 114.6l-172.2 5 169 12-169 3.7L427.6 150 253 152.6 423.7 168 259 166.3"></path><text y="185" x="364.4" class="label" transform="translate(-22.504 -37.426)">Process</text><text class="label" x="632.6" y="184.8" transform="translate(-22.504 -37.426)">Render</text><text class="label" x="96" y="184.4" transform="translate(-22.504 -37.426)">Fetch</text><path class="outline" d="M406.5 86.5l-134 5-3.8 75.5 147.6-2.4L414 94"></path><path d="M135.5 86.5L5 85.5l137.8 17-142.2.8L148 114.6l-142.2 5 139 12-139 3.7L145.6 150 1 152.6 141.7 168 7 166.3" class="color-in"></path><path d="M126.5 88.5l-110 3-1.8 71.5 119.6 1.6L132 98" class="outline"></path><path d="M675.5 86.5l-140.6 1 147.7 15-152.2 2.8 157.4 9.3-152.3 7 149 10-149 5.7 150 12.7-150.7 4.6L681.7 168l-144.7.2" class="color-in"></path><path d="M668.5 88.5l-124 3 4.2 75.5 125.6-2.4L676 100" class="outline"></path></g><use height="100%" width="100%" transform="translate(0 242)" xlink:href="#e"></use><text y="284.8" x="341.8" class="label heading">With streaming</text></svg>
+ 
+</body>
+</html>

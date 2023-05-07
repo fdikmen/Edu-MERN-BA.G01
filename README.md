@@ -358,7 +358,16 @@ npm Intellisense, ESLint, REST Client, ShortCuts for VSCode [https://code.visual
 03. Callback Function
 04. Promise => function.then(+).catch(-)
 05. File System (require('fs'))
+```
+const fs = require('fs');
+```
 Read File - Write File - Remove File
+```
+// fs.readFile('filename', callback)
+// fs.writeFile('filename', 'content', callback)
+// fs.appendFile('filename', 'content', callback)
+
+```
 06. HTTP Server
 07. nodemon
 ```
