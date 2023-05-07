@@ -344,7 +344,7 @@ const events = require('events')
 // create an eventEmitter object for management events
 const eventEmitter = new events.EventEmitter()
 ```
-For Create => on <br/>
+For Create => on or once <br/>
 For Trigger => emit
 
 02. __filename & __dirname
