@@ -23,6 +23,8 @@ console.log("End of the File Read");
 
 // create & write file
 // fs.writeFile fs.appendFile
+// fs.writeFileSync fs.appendFileSync
+// fs.writeFile('filename', 'content', callback)
 
 fs.appendFile('demo2.txt', 'Hello World! 01!!!', (err) => {
     console.log("02-File Created with append");
@@ -42,6 +44,7 @@ fs.writeFile('demo2.txt', 'Hello World! 02!!!\nHello World! 03!!!', (err) => {
 
 // delete file
 // fs.unlink
+// fs.unlink('filename', callback)
 
 fs.unlink('demo2.txt', (err) => {
     if (err) throw err;

@@ -366,6 +366,7 @@ Read File - Write File - Remove File
 // fs.readFile('filename', callback)
 // fs.writeFile('filename', 'content', callback)
 // fs.appendFile('filename', 'content', callback)
+// fs.unlink('filename', callback)
 
 ```
 06. HTTP Server
