@@ -388,8 +388,19 @@ npm install -g nodemon (Windows - MacOS - Linux)
 sudo npm install -g nodemon (Optional -> MacOS - Linux)
 ```
 08. HTML doc serve with http nodejs server
-09. HTTP Methods
+09. HTTP Methods (GET - POST - PUT - DELETE)
 10. Route Example
+
+
+---
+### 07052023-Keywords
+01. Streams
+Chunk -> Streams of Data
+02. Stream Types
+Readable - Writeable - Readable/Writeable (transform)
+03. NodeJS Streaming Logic => eventEmitter.on() -> eventEmitter.emit() -> response.end()
+04. Create ReadableStream
+05. Create WriteableStrem with Pipeline
 
 
 
