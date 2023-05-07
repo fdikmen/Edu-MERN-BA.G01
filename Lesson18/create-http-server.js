@@ -2,6 +2,7 @@
 const http = require('http');
 
 // create a server object
+// const myserver = http.createServer(callback)
 const myserver = http.createServer((request, response) => {
     console.log('request received');
     //console.log('request URL=>',request.url);

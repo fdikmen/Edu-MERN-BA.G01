@@ -370,6 +370,18 @@ Read File - Write File - Remove File
 
 ```
 06. HTTP Server
+```
+const http = require('http');
+```
+Create Server
+```
+const myserver = http.createServer(callback)
+const myserver = http.createServer((req,res)=>{})
+```
+Define Server Port
+```
+myserver.listen(PortNumber)
+```
 07. nodemon
 ```
 npm install -g nodemon (Windows - MacOS - Linux)

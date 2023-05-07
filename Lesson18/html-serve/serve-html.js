@@ -12,7 +12,7 @@ const myserver = http.createServer((req, res) => {
 
     // read file
     fs.readFile('index.html', (err, data) => {
-        if (err) throw err;
+        if (err) res.end(err);
         res.end(data);
     });
         
