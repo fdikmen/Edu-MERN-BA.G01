@@ -408,6 +408,14 @@ Readable - Writeable - Readable/Writeable (transform)
 02. npm install express
 03. node-snippets
 04. PUG
+05. convert -> HTML to PUG/JADE
+06. PUG Sample with ExpressJS
+- npm i express
+- Created by "node-express" snippet with node-snippets
+- run project with nodemon
+- npm install pug
+- Sass/Less/Stylus/Pug/Jade/Typescript/Jav for PUG snippets
+- vscode-faker for FAKE DATA
 
 
 
