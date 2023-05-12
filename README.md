@@ -417,5 +417,15 @@ Readable - Writeable - Readable/Writeable (transform)
 - Sass/Less/Stylus/Pug/Jade/Typescript/Jav for PUG snippets
 - vscode-faker for FAKE DATA
 
+---
+### 12052023-Keywords
+01. Summary
+02. Define STATIC FOLDER with ExpressJS
+03. Routing with ExpressJS
+04. Postman (https://www.postman.com/downloads/)
+05. Using keywords (?,*,+) with routing
+06. Http Methods with Routing (GET - POST - PUT - DELETE - ALL)
+
+
 
 
