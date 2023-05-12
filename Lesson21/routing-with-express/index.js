@@ -27,4 +27,15 @@ app.get('/who?is+i*t', (req, res) => res.send('Got a GET request for /whoisit'))
 // ALL means all methods
 app.all('/secret', (req, res) => { res.send(`Got a ${req.method} request for /secret`) })
 
+// Parameters
+app.get('/users/:userId', (req, res) => { res.send(`Got a GET request with parameters =>${req.params.userId}`) })
+// multiple parameters
+
+app.get('/users/:userId/:addressId', (req, res) => {
+    console.log(req.params);
+    res.send(`Got a GET request with parameters =>${req.params.userId} and ${req.params.addressId}`)
+})
+
+app.get('/users/:userId/books/:bookId', (req, res) => { res.send(`Got a GET request with parameters =>${req.params.userId} and ${req.params.bookId}`) })
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

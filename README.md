@@ -425,7 +425,19 @@ Readable - Writeable - Readable/Writeable (transform)
 04. Postman (https://www.postman.com/downloads/)
 05. Using keywords (?,*,+) with routing
 06. Http Methods with Routing (GET - POST - PUT - DELETE - ALL)
+07. Parameters with Routing (:params)
+08. Router Object in ExpressJS (express.Router())
+- Define express,route in Route File
+- Move route codes to Route File
+- Convert "app" to "router"
+- Module Export
+- import route file
 
-
+09. Middleware
+10. Error Handler
+11. Express Application Generator
+- npx express-generator
+- npm i
+- npm start (=> "start": "nodemon ./bin/www")
 
 
