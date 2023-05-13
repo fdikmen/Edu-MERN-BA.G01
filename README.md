@@ -441,3 +441,42 @@ Readable - Writeable - Readable/Writeable (transform)
 - npm start (=> "start": "nodemon ./bin/www")
 
 
+---
+### 13052023-Keywords
+01. Summary
+02. DBMS (Database Management System)
+03. NoSQL (NotOnlySQL)
+04. MongoDB
+- Setup File; https://www.mongodb.com/try/download/community-kubernetes-operator
+- For Windows; https://ismailkasan.medium.com/windows-10da-mongo-db-kurulumu-41341c057262
+    
+- For Macos/Linux;
+1. https://brew.sh/index_tr (install brew)
+2. brew update
+3. brew install mongodb
+4. sudo mkdir -p /data/db
+5. sudo chown -R $USER /data/db 
+6. brew services start mongodb 
+7. mongo
+
+- For Windows;
+1. Download MSI File ans Install with next next (https://www.mongodb.com/try/download/community-kubernetes-operator)
+2. cd C:\\ (in Admin CMD)
+3. md "data\db" (in Admin CMD)
+4. "[mongoDb-bin-folder-path]\mongod.exe" --dpath="C:\\data\db" (in Admin CMD)
+5. Other Steps ... 
+
+```
+npx express-generator
+npm install -g express-generator
+npm i nodemon -g
+
+ERROR: nodemon permission denied windows with powershell script
+Powershell (run as Admin)
+BUG FIXED: 
+    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+https://www.mongodb.com/try/download/community-kubernetes-operator
+    
+```
+
+

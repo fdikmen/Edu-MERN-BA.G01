@@ -22,6 +22,7 @@ app.get('/', (req, res) => res.render('index'))
 
 const about = require('./routes/about')
 
+// Apply Middleware to '/about' routes
 app.use('/about', auth)
 
 app.use(about)
