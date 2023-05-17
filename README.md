@@ -478,5 +478,15 @@ BUG FIXED:
 https://www.mongodb.com/try/download/community-kubernetes-operator
     
 ```
+---
+### 17052023-Keywords
+01. Summary
+02. What is Connector?
+03. Mongoose
+https://mongoosejs.com/docs/index.html
+04. Using mongoDB on cloud (MongoDB Atlas)
+https://www.mongodb.com/atlas/database
+05. MongoDB Compass
+
 
 
