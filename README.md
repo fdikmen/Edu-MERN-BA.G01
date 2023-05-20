@@ -488,5 +488,13 @@ https://mongoosejs.com/docs/index.html
 https://www.mongodb.com/atlas/database
 05. MongoDB Compass
 
+---
+### 20052023-Keywords
+01. Summary
+02. What is Connector/Drive?
+03. Mongoose
+04. Install & Using Mongoose
+05. CRUD Operations with Mongoose
+Create, Read, Update, Delete, Read All, Delete All, Aggregate (JOIN)
 
 
