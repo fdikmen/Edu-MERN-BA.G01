@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var albumRouter = require('./routes/Album.routes');
 
 // STEP-1: import mongoose
 const mongoose = require('mongoose');
@@ -39,72 +40,6 @@ mongoose.connection.on('disconnected', () => {
 // STEP-3.1: Create a Schema
 // Create a collection(TABLE)-Schema
 const Schema = mongoose.Schema;
-
-const AlbumSchema = new Schema({
-  userId: Number,
-  id: Number,
-  title: String
-});
-// STEP-3.2: Create a Model
-// Create a model
-const AlbumModel = mongoose.model('Album', AlbumSchema);
-
-// CRUD Operations (Create, Read, Update, Delete) + Aggregate (Join) + All Read + All Delete
-// STEP-4: (CREATE) Create a Document / Insert a Record / Add a data
-const addAlbum = (_newAlbum) => {
-  //Create a new Album from AlbumModel(Clone)
-  const newAlbum = new AlbumModel(_newAlbum);
-  //INSERT
-  newAlbum.save().then((data) => {
-    console.log(data);
-  }).catch((err) => {
-    console.log(err);
-  });
-};
-/*
-addAlbum({userId: 2, id: 101, title: 'My Album'});
-addAlbum({userId: 3, id: 103, title: 'My Album 2'});
-addAlbum({userId: 4, id: 104, title: 'My Album 3'});
-*/
-
-// STEP-5: (DELETE) Delete a Document / Delete a Record / Delete a data
-AlbumModel.deleteOne({userId: '2'}).then((data) => {
-  console.log("Deleted: ", data);
-}).catch((err) => {
-  console.log(err);
-});
-
-// STEP-6: (UPDATE) Update a Document / Update a Record / Update a data
-AlbumModel.updateOne({userId: '3'}, {title: 'My Album 444 Updated',id:444}).then((data) => {
-  console.log("Updated: ", data);
-}).catch((err) => {
-  console.log(err);
-});
-
-// STEP-7: (READ) Read a Document / Read a Record / Read a data
-AlbumModel.find({userId: '4'}).then((data) => {
-  console.log("Read: ", data);
-}).catch((err) => {
-  console.log(err);
-});
-
-
-// STEP-8: (READ) Read all Documents / Read all Records / Read all data
-AlbumModel.find({}).then((data) => {
-  console.log("Read All: ", data);
-}).catch((err) => {
-  console.log(err);
-});
-
-// STEP-9: (DELETE) Delete all Documents / Delete all Records / Delete all data
-/*
-AlbumModel.deleteMany({}).then((data) => {
-  console.log("Deleted All: ", data);
-}).catch((err) => {
-  console.log(err);
-});
-*/
-
 // STEP-10: JOIN  Users and Albums
 // Create a collection(TABLE)-Schema
 const UserSchema = new Schema({
@@ -164,6 +99,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/albums', albumRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

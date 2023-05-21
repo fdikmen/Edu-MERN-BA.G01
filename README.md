@@ -491,10 +491,19 @@ https://www.mongodb.com/atlas/database
 ---
 ### 20052023-Keywords
 01. Summary
-02. What is Connector/Drive?
-03. Mongoose
-04. Install & Using Mongoose
-05. CRUD Operations with Mongoose
+02. What is Connector/Driver?
+03.
+04. Mongoose
+05. Install & Using Mongoose
+06. CRUD Operations with Mongoose
 Create, Read, Update, Delete, Read All, Delete All, Aggregate (JOIN)
+
+---
+### 21052023-Keywords
+01. Summary
+02. Routes, Models, Controllers Folders
+03. Coding MovieApp API
+- npx express-generator --view=pug movieapp-api
+- 
 
 
