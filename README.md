@@ -502,8 +502,12 @@ Create, Read, Update, Delete, Read All, Delete All, Aggregate (JOIN)
 ### 21052023-Keywords
 01. Summary
 02. Routes, Models, Controllers Folders
-03. Coding MovieApp API
+03. Coding MovieApp API (https://github.com/fdikmen/movieapp-api)
 - npx express-generator --view=pug movieapp-api
-- 
-
+cd movieapp-api
+npm install
+npm start
+- Create database (MovieAppDB) on Compass
+- npm install mongoose
+- Creat and Codes db.js for connetion to MongoDB
 
