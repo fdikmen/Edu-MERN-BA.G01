@@ -10,7 +10,7 @@ const MovieSchema = new Schema({
         type: String,
         required: [true, 'The field `{PATH}` is required.'],
         maxlength: [50, '`{PATH}` field (`{VALUE}`), must be less than ({MAXLENGTH}) characters.'],
-        minlength: [5, '`{PATH}` field (`{VALUE}`), must be more than ({MINLENGTH}) characters.']
+        minlength: [1, '`{PATH}` field (`{VALUE}`), must be more than ({MINLENGTH}) characters.']
     },
     category: String,
     country: {type: String,default: 'Turkey'},
@@ -24,4 +24,4 @@ const MovieSchema = new Schema({
 });
 
 //export movie schema
-module.exports = mongoose.model('movie', MovieSchema);
+module.exports = mongoose.model('movies', MovieSchema);
