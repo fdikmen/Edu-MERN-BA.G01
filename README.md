@@ -517,5 +517,21 @@ npm start
 02. Get a Movie API
 03. Using Error Handler
 04. Update a Movie
+05. Delete a Movie
+06. Get the top 10 movies
+07. Movies between two dates
+
+Windows
+```
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+MacOS/Linux
+```
+sudo [...]
+```
+
+---
+### 27052023-Keywords
+01. Summary
 
 
