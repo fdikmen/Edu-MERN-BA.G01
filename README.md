@@ -538,7 +538,17 @@ B. Coding for Director EndPoints
 	2. Create Director Route (director.routes.js)
 	3. Import & Use Director Route (in app.js)
 	4. Create Routes
-		4.1. Create POST Endpoint
-		4.2. Create GET Endpoint
+		4.1. Create Director POST Endpoint (/)
+		4.2. Create Director GET Endpoint (/)
+		4.3. Create Director GET Endpoint (/WithMovies)
+		4.4. Create Director GET Endpoint (/:director_id)
+		4.5. Create Director PUT Endpoint (/:director_id)
+		4.6. Create Director DELETE Endpoint (/:director_id)
+		4.7. Create Movie GET Endpoint (/listWithDirector)
+
+---
+### 27052023-Keywords
+A. Summary
+B. FullStack Form Project
 
 
