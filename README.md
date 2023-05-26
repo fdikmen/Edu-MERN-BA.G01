@@ -531,7 +531,14 @@ sudo [...]
 ```
 
 ---
-### 27052023-Keywords
-01. Summary
+### 26052023-Keywords
+A. Summary
+B. Coding for Director EndPoints
+	1. Create Director Model (Director.Model.js)
+	2. Create Director Route (director.routes.js)
+	3. Import & Use Director Route (in app.js)
+	4. Create Routes
+		4.1. Create POST Endpoint
+		4.2. Create GET Endpoint
 
 

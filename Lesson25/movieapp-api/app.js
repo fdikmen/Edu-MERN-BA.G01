@@ -8,6 +8,8 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 //import movie router
 var movieRouter = require('./routes/movie.routes');
+//import director router
+var directorRouter = require('./routes/director.routes');
 
 //db connection
 require('./helpers/db.js');
@@ -29,6 +31,8 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 //use movie router
 app.use('/api/movies', movieRouter);
+//use director router
+app.use('/api/directors', directorRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
