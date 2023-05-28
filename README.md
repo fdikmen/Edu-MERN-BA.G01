@@ -551,4 +551,19 @@ B. Coding for Director EndPoints
 A. Summary
 B. FullStack Form Project
 
+---
+### 28052023-Keywords
+1. Summary NEW Repository => https://github.com/fdikmen/Edu-MERN-BA.G01
+2. Build & Production & Hosting/Server/SSL & Docker Containers
+Step by step hosting nodejs app; <br/>
+https://dev.to/techfortified/how-to-host-nodejs-express-restful-api-on-cpanel-2e7c <br/>
+Free SSL;<br/>
+https://www.sslforfree.com/
+3. JS PROMISES
+4. React LAZY
+5. React Suspense
+6. Isomorphic - SSR - Server Side Rendering
+7. NextJS
+8. Questions?
+
 
